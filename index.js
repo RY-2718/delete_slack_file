@@ -2,24 +2,32 @@
 
 require('dotenv').config();
 
-const https = require('https');
-const URL = `https://slack.com/api/channels.list?token=${process.env.TOKEN}`;
+const httpClient = require('request');
+const fs = require('fs');
 
-https
-  .get(URL, res => {
-    let body = '';
-    res.setEncoding('utf8');
+const slack = require('./src/slack');
 
-    res.on('data', chunk => {
-      body += chunk;
+const ts_to_date = new Date(2018, 3, 1, 9, 0, 0, 0);
+let total_size = 0;
+
+httpClient.get(
+  {
+    url: 'https://slack.com/api/files.list',
+    qs: {
+      token: process.env.TOKEN,
+      count: 1000,
+      ts_to: Math.floor(ts_to_date.getTime() / 1000),
+    },
+  },
+  (error, response, body) => {
+    const json = slack.filter_files(JSON.parse(body), 10 ** 6);
+    fs.writeFileSync(
+      'sample_data/files.json',
+      JSON.stringify(slack.shorten(json))
+    );
+    json['files'].forEach(file => {
+      total_size += file['size'];
     });
-
-    res.on('end', res => {
-      res = JSON.parse(body);
-      console.log(res);
-    });
-  })
-  .on('error', e => {
-    // エラー時の挙動
-    console.log(e.message);
-  });
+    console.log(total_size);
+  }
+);

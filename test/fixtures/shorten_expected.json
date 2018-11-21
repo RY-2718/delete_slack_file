@@ -1,0 +1,17 @@
+{
+  "files": [
+    {
+      "id": "abcdefghi",
+      "created": 1506954794,
+      "title": "pinned",
+      "size": 1145141919,
+      "url_private": "https:\/\/files.slack.com\/files-pri\/test\/test"
+    }
+  ],
+  "paging": {
+    "count": 100,
+    "total": 402,
+    "page": 5,
+    "pages": 5
+  }
+}

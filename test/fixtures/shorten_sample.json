@@ -1,0 +1,55 @@
+{
+  "ok": true,
+  "files": [
+    {
+      "id": "abcdefghi",
+      "created": 1506954794,
+      "timestamp": 1515130339,
+      "name": "pinned",
+      "title": "pinned",
+      "mimetype": "application\/pdf",
+      "filetype": "pdf",
+      "pretty_type": "PDF",
+      "user": "abcdefghi",
+      "editable": true,
+      "size": 1145141919,
+      "mode": "hosted",
+      "is_external": false,
+      "external_type": "",
+      "is_public": true,
+      "public_url_shared": false,
+      "display_as_bot": false,
+      "username": "",
+      "url_private": "https:\/\/files.slack.com\/files-pri\/test\/test",
+      "url_private_download": "https:\/\/files.slack.com\/files-pri\/test\/download\/test",
+      "permalink": "https:\/\/example.slack.com\/files\/test\/test\/test",
+      "permalink_public": "https:\/\/slack-files.com\/test",
+      "preview": "",
+      "updated": 1515130339,
+      "editor": "abcdefghi",
+      "last_editor": "abcdefghi",
+      "state": "active",
+      "channels": [
+        "abcdefghi"
+      ],
+      "groups": [],
+      "ims": [],
+      "comments_count": 1,
+      "pinned_to": [
+        "abcdefghi"
+      ],
+      "pinned_info": {
+        "abcdefghi": {
+          "pinned_by": "abcdefghi",
+          "pinned_ts": 1507001359
+        }
+      }
+    }
+  ],
+  "paging": {
+    "count": 100,
+    "total": 402,
+    "page": 5,
+    "pages": 5
+  }
+}
