@@ -1,0 +1,39 @@
+{
+  "ok": true,
+  "files": [
+    {
+      "id": "bcdefghij",
+      "created": 1513157906,
+      "timestamp": 1513157906,
+      "name": "remain_sample",
+      "title": "remain_sample",
+      "mimetype": "text\/plain",
+      "filetype": "text",
+      "pretty_type": "Plain Text",
+      "user": "bcdefghij",
+      "editable": true,
+      "size": 1145141919,
+      "mode": "snippet",
+      "is_external": false,
+      "external_type": "",
+      "is_public": true,
+      "public_url_shared": false,
+      "display_as_bot": false,
+      "username": "",
+      "url_private": "https:\/\/files.slack.com\/files-pri\/test\/test",
+      "url_private_download": "https:\/\/files.slack.com\/files-pri\/test\/download\/test",
+      "permalink": "https:\/\/example.slack.com\/files\/test\/test\/test",
+      "permalink_public": "https:\/\/slack-files.com\/test",
+      "preview": "",
+      "lines": 39,
+      "lines_more": 34,
+      "preview_is_truncated": false,
+      "channels": [
+        "bcdefghij"
+      ],
+      "groups": [],
+      "ims": [],
+      "comments_count": 0
+    }
+  ]
+}
