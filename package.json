@@ -7,7 +7,8 @@
   "description": "slackのファイルを消すやつです",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "run": "node index.js"
   },
   "author": "paul",
   "license": "MIT",
